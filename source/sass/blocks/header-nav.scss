@@ -8,11 +8,12 @@
 
 .header-nav__wrapper {
   display: grid;
-  grid-template-columns: size(89px) size(60px) size(60px) size(60px) size(60px) size(60px);
+  // grid-template-columns: size(89px) size(60px) size(60px) size(60px) size(60px) size(60px);
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(2, auto);
   position: relative;
   margin: 0 auto;
-  min-width: size(390px);
+  // min-width: size(360px);
   max-width: 1600px;
 
   @media (min-width: $tablet-width) {

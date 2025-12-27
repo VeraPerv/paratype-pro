@@ -1,7 +1,7 @@
 .is-animated {
   opacity: 0;
   transform-origin: center;
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease-in-out;
   overflow: hidden;
 

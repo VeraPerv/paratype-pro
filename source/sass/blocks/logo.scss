@@ -1,6 +1,9 @@
 .logo {
-  padding: 11px 10px 10px 25px;
-  width: 100%;
+  // padding: 11px 10px 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100%;
   height: size(59px);
 
   @media (min-width: $tablet-width) {
