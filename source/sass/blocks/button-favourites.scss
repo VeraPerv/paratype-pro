@@ -1,0 +1,41 @@
+.button-favourites {
+  display: block;
+  width: size(24px);
+  height: size(21px);
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: flex;
+    width: size(20px);
+    height: size(20px);
+    mask-image: url("/__spritemap#sprite-heart-view");
+    mask-repeat: no-repeat;
+    background-color: var(--color-primary);
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:focus-visible::before {
+    background-color: $accent-color;
+    outline: none;
+  }
+
+  &:active::before {
+    background-color: $background-bullet;
+  }
+}

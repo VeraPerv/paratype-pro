@@ -1,0 +1,10 @@
+.format-caption {
+  margin: 0;
+  border-bottom: size(1px) solid $color-primary;
+  font-weight: 600;
+  font-size: size(12px);
+  text-transform: uppercase;
+  text-align: right;
+  padding-bottom: size(3px);
+  color: var(--color-primary);
+}

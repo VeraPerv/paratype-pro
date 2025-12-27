@@ -1,0 +1,31 @@
+.recommendation-slider__list {
+  @media (min-width: $desktop-width) {
+    min-height: 600px;
+  }
+}
+
+.recommendation-slider__scrollbar {
+  padding: 0 8px;
+}
+
+.recommendation-slider__img-wrapper {
+  @media (min-width: $desktop-width) {
+    height: 600px;
+  }
+}
+
+.recommendation-slider__img {
+  @media (min-width: $desktop-width) {
+    height: 600px;
+  }
+}
+
+.recommendation-slider__item {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &--current {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+}

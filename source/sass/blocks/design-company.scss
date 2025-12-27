@@ -1,0 +1,39 @@
+.design-company {
+  font-weight: 500;
+  font-size: size(12px);
+  line-height: size(14px);
+  letter-spacing: 0.01em;
+  color: $background-bullet;
+  max-width: size(214px);
+  transition: color 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    font-size: size(10px);
+    line-height: size(12px);
+    max-width: size(129px);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    max-width: 210px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $accent-color;
+    transition: color 0.3s ease;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    transition: color 0.3s ease;
+  }
+
+  &--disabled {
+    color: $background-disabled;
+    transition: color 0.3s ease;
+    pointer-events: none;
+  }
+}

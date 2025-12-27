@@ -1,0 +1,25 @@
+.category {
+  overflow: hidden;
+}
+
+.category__wrapper {
+  overflow: hidden;
+  padding: size(20px) 0 size(20px) size(10px);
+  max-width: 1540px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: size(20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 20px 0 30px;
+  }
+}
+
+.category__list {
+  @media (min-width: $tablet-width) {
+    margin-left: unset;
+  }
+}

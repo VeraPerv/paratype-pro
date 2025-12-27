@@ -1,0 +1,49 @@
+.button-scroll {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: $color-white;
+  cursor: pointer;
+  padding: none;
+  border: none;
+  outline: 1px solid #f0f0f0;
+  border-radius: 30px;
+  right: 30px;
+  z-index: 20;
+  bottom: 120px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  @media (min-width: $desktop-width) {
+    right: calc(50% - $desktop-width / 2 + 30px);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-scroll-arrow-view");
+    mask-size: 20px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-primary;
+    transition: background-color 0.3s ease;
+  }
+
+  &--shown {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $background-catalog;
+    transition: background-color 0.3s ease;
+  }
+}
+

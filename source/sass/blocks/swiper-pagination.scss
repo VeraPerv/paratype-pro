@@ -1,0 +1,51 @@
+.swiper-pagination {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: size(10px);
+  min-height: size(20px);
+  bottom: 0;
+  min-width: size(32px);
+  padding: 0 size(4px);
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.swiper-pagination__bullet {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $background-bullet;
+    border-radius: 50%;
+    width: size(4px);
+    height: size(4px);
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      width: size(6px);
+      height: size(6px);
+    }
+  }
+
+  &--active::before {
+    background-color: $accent-color;
+    width: size(6px);
+    height: size(6px);
+
+    @media (min-width: $tablet-width) {
+      width: size(8px);
+      height: size(8px);
+    }
+  }
+}
