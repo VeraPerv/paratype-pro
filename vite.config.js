@@ -65,7 +65,7 @@ export default {
   build: {
     outDir: '../dist',
   },
-  base: './paratype-project',
+  base: './paratype-pro',
   server: {
     port: 3000,
   }
