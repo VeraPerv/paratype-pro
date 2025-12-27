@@ -1,6 +1,4 @@
 const themeSwitcherInput = document.querySelector('.theme-switcher__input');
-// const body = document.querySelector('.body');
-
 const switchTheme = () => {
   if(themeSwitcherInput.checked) {
     document.body.classList.add('dark-theme');

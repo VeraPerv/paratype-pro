@@ -29,7 +29,15 @@
 .footer-contacts__link {
   transition: color 0.3s ease;
 
-  &:hover,
+
+  @media (hover: hover) {
+    &:hover {
+      color: $accent-color;
+      outline: none;
+      transition: color 0.3s ease;
+    }
+  }
+
   &:focus,
   &:focus-visible {
     color: $accent-color;

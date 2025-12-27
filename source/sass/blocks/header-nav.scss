@@ -56,7 +56,12 @@
       outline: none;
     }
 
-    &:hover::before,
+    @media (hover: hover) {
+      &:hover::before {
+        background-color: $accent-color;
+      }
+    }
+
     &:focus::before,
     &:focus-visible::before {
       background-color: $accent-color;
@@ -76,9 +81,15 @@
 
     &--open {
       background-color: $accent-color;
-      &:hover::before,
-      &:hover::after {
-        background-color: $color-primary;
+
+      @media (hover: hover) {
+        &:hover::before {
+          background-color: $color-primary;
+        }
+
+        &:hover::after {
+          background-color: $color-primary;
+        }
       }
 
       &:active::before,
@@ -191,14 +202,23 @@
   border-left: size(1px) solid $background-disabled;
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  &:hover::before {
-    background-color: $accent-color;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  @media (hover: hover) {
+    &:hover::before {
+      background-color: $accent-color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      outline: none;
+      color: $accent-color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
   }
 
   &:focus,
-  &:focus-visible,
-  &:hover {
+  &:focus-visible {
     outline: none;
     color: $accent-color;
     transition: background-color 0.3s ease, color 0.3s ease;

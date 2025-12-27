@@ -14,7 +14,15 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 
-  &:hover,
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $background-hover;
+      transition: background-color 0.3s ease;
+      outline: none;
+    }
+  }
+
   &:focus,
   &:focus-visible {
     background-color: $background-hover;

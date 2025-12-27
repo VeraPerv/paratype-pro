@@ -53,7 +53,14 @@
   display: block;
   transition: color 0.3s ease;
 
-  &:hover,
+@media (hover: hover) {
+  &:hover {
+      color: $accent-color;
+      transition: color 0.3s ease;
+      outline: none;
+    }
+  }
+
   &:focus,
   &:focus-visible {
     color: $accent-color;

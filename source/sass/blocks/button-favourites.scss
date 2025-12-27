@@ -28,7 +28,13 @@
     outline: none;
   }
 
-  &:hover::before,
+  @media (hover: hover) {
+    &:hover::before {
+      background-color: $accent-color;
+      outline: none;
+    }
+}
+
   &:focus::before,
   &:focus-visible::before {
     background-color: $accent-color;

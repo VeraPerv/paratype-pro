@@ -1,8 +1,6 @@
 const bestSellerSection = document.querySelector('.bestseller');
-
 const bestSellerLinks = bestSellerSection?.querySelectorAll('.bestseller .products-slider__scrollbar-link');
 const bestSellerListItems = bestSellerSection?.querySelectorAll('.bestseller-slider__item');
-
 const bestSellerPaginationContainer = bestSellerSection?.querySelector('.bestseller__swiper-pagination');
 const bestSellerBullets = bestSellerPaginationContainer?.querySelectorAll('.swiper-pagination__bullet');
 

@@ -76,10 +76,7 @@ const initPromoSlider = () => {
     startX = event.touches[0].clientX;
     isDragging = true;
     animationFrameId = requestAnimationFrame(animateMove);
-    // promoSliderList.style.transition = 'none';
     promoSliderList.style.transition = 'transform 0.3s ease';
-
-
   };
 
   const onTouchMove = (event) => {

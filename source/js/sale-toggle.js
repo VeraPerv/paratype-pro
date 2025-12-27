@@ -1,12 +1,10 @@
 const saleToggleBtn = document.getElementById('sale-toggle');
 const aboutBlock = document.querySelector('.sale .products-card__about');
-
 const bestsellerToggleBtn = document.getElementById('bestseller-toggle');
 const aboutBestsellerBlock = document.querySelector('.bestseller .products-card__about');
 
 const recommendationToggleBtn = document.getElementById('recommendation-toggle');
 const aboutRecommendationBlock = document.querySelector('.recommendation .products-card__about');
-
 const saleSelect = document.querySelector('.sale-select');
 const breakpoint = window.matchMedia('(min-width: 920px)');
 

@@ -6,10 +6,6 @@ const recommendPaginationContainer = recommendSection?.querySelector('.recommend
 const recommendBullets = recommendPaginationContainer?.querySelectorAll('.swiper-pagination__bullet');
 
 const initRecommendationSlider = () => {
-  // recommendationItems.forEach((item, index) => {
-  //   item.style.display = index === 0 ? 'block' : 'none';
-  // });
-
   recommendationLinks.forEach((link, index) => {
     link.classList.toggle('products-slider__scrollbar-link--active', index === 0);
   });
@@ -34,16 +30,11 @@ const initRecommendationSlider = () => {
 
 
 recommendPaginationContainer.addEventListener('click',(evt) => {
-  // УДАЛИЛИ АКТИВНЫЙ КЛАСС СО ВСЕХ БУЛЛЕТОВ
   const arrOfBullets = Array.from(recommendBullets);
   arrOfBullets.forEach((btn) => btn.classList.remove('swiper-pagination__bullet--active'));
-
-  // ДОБАВИЛИ АКТИВНЫЙ КЛАСС НА БУЛЛЕТ, КОТОРЫЙ  НАЖАЛИ
   const btnTarget = evt.target.closest('.swiper-pagination__bullet');
-
   btnTarget.classList.add('swiper-pagination__bullet--active');
   const indexOfActiveBullet = arrOfBullets.findIndex((elem) => elem === btnTarget);
-  // ОЧИЩАЕМ АКТИВНЫЕ КАРТИНКИ
   recommendationItems.forEach((elem) => elem.classList.remove('recommendation-slider__item--current'));
   recommendationItems[indexOfActiveBullet].classList.add('recommendation-slider__item--current');
 

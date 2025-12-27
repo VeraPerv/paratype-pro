@@ -40,25 +40,14 @@ const initProductSlider = () => {
 };
 
 salePaginationContainer.addEventListener('click',(evt) => {
-  // УДАЛИЛИ АКТИВНЫЙ КЛАСС СО ВСЕХ БУЛЛЕТОВ
   const arrOfBullets = Array.from(saleBullets);
   arrOfBullets.forEach((btn) => btn.classList.remove('swiper-pagination__bullet--active'));
-
-  // ДОБАВИЛИ АКТИВНЫЙ КЛАСС НА БУЛЛЕТ, КОТОРЫЙ  НАЖАЛИ
   const btnTarget = evt.target.closest('.swiper-pagination__bullet');
-
   btnTarget.classList.add('swiper-pagination__bullet--active');
-  console.log(btnTarget);
-  // НАШЛИ АКТИВНЫЙ БУЛЛЕТ
   const indexOfActiveBullet = arrOfBullets.findIndex((elem) => elem === btnTarget);
-  console.log(indexOfActiveBullet);
-  // ОЧИЩАЕМ АКТИВНЫЕ КАРТИНКИ
   listItems.forEach((elem) => elem.classList.remove('sale-slider__item--current'));
   listItems[indexOfActiveBullet].classList.add('sale-slider__item--current');
-
 });
-
-
 
 document.addEventListener('DOMContentLoaded', initProductSlider);
 
