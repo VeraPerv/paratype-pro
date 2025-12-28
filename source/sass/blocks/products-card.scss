@@ -1,9 +1,12 @@
 .products-card {
-  // min-width: size(370px);
   padding: size(20px) size(20px) size(20px) size(19px);
   background-color: var(--color-white);
   border-radius: size(10px);
   position: relative;
+
+  @media(min-width: $desktop-width-before) {
+    min-width: size(370px);
+  }
 
   @media (min-width: $desktop-width) {
     padding: 21px 20px 20px;

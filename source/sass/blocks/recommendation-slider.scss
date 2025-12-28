@@ -1,3 +1,7 @@
+.recommendation-slider {
+  min-height: size(300px);
+}
+
 .recommendation-slider__list {
   @media (min-width: $desktop-width) {
     min-height: 600px;
