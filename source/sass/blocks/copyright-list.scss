@@ -35,4 +35,22 @@
     font-size: 12px;
     max-width: 250px;
   }
+
+  &:last-child {
+    opacity: 0.6;
+    font-size: size(10px);
+    line-height: size(12px);
+    @media (max-width: $mobile-width-only) {
+      line-height: size(12px);
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: size(8px);
+      line-height: size(10px);
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 10px;
+    }
+  }
 }

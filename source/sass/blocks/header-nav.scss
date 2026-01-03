@@ -307,10 +307,12 @@
   }
 
   &--favorites::before {
+    overflow: hidden;
     content: "";
     display: block;
     width: size(20px);
     height: size(20px);
+    mask-size: size(20px);
     mask-image: url("/__spritemap#sprite-heart-view");
     mask-repeat: no-repeat;
     background-color: var(--color-primary);
@@ -319,6 +321,7 @@
     @media (min-width: $desktop-width) {
       width: 24px;
       height: 24px;
+      mask-size: size(24px);
     }
   }
 
