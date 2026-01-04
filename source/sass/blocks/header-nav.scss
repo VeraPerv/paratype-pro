@@ -310,9 +310,9 @@
     overflow: hidden;
     content: "";
     display: block;
-    width: size(20px);
-    height: size(20px);
-    // mask-size: size(20px);
+    width: size(19px);
+    height: size(19px);
+    mask-size: size(19px);
     mask-position: center;
     mask-image: url("/__spritemap#sprite-heart-view");
     mask-repeat: no-repeat;
