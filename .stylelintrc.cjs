@@ -5,6 +5,8 @@ module.exports = {
   ],
   plugins: ["stylelint-selector-bem-pattern"],
   rules: {
+    "function-no-unknown": null,
+    "scss/function-no-unknown": null,
     "plugin/selector-bem-pattern": {
       preset: "bem",
       implicitComponents: "blocks/*.scss",

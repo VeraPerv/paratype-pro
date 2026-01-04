@@ -14,7 +14,7 @@
     "linthtml": "linthtml source",
     "html-validate": "html-validate source/index.html",
     "lint-bem": "node bem-tree.js",
-    "lint": "stylelint \"source/sass/**/*.scss\" --fix",
+    "lint": "stylelint \"source/sass/**/*.scss\"",
     "lint-js": "eslint source/js --fix",
     "ls-lint": "ls-lint",
     "editorconfig": "editorconfig-cli",
