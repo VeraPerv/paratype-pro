@@ -16,11 +16,6 @@
 
   @media (min-width: $desktop-width-before) {
     display: inline-flex;
-    opacity: 0;
-    animation-name: text-visualisation-1;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    animation-fill-mode: forwards;
   }
 
   @media (min-width: $desktop-width) {
@@ -258,25 +253,5 @@
 
   @media (min-width: $desktop-width-before) {
     display: none;
-  }
-}
-
-@keyframes text-visualisation-1 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes text-visualisation-2 {
-  5% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
