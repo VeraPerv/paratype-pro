@@ -36,7 +36,6 @@
 .menu-secondary__item {
   min-width: 80px;
   min-height: 120px;
-  max-width: 150px;
 
   @media (max-width: $tablet-width-only) {
     min-width: 80px;
@@ -54,6 +53,7 @@
     min-height: size(60px);
     flex-wrap: wrap;
     display: flex;
+    max-width: 150px;
   }
 
   @media (min-width: $desktop-width) {
